@@ -1,0 +1,14 @@
+---
+
+- name: Crear tarea cron
+  ansible.builtin.cron:
+    name: "{{ item.name }}"
+    job: "{{ item.job }}"       
+    minute: "{{ item.minute }}"
+    hour: "{{ item.hour }}"
+    day: "{{ item.day }}"
+    month: "{{ item.month }}"
+    weekday: "{{ item.weekday }}"
+  with_items: "{{ tarea_cron }}"
+
+...

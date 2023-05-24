@@ -1,0 +1,36 @@
+---
+
+- name: Prepare
+  hosts: all
+  gather_facts: true
+  tasks:
+      - name: Preparando contenedor ubi8
+        when: ansible_os_family == "RedHat" 
+        block:
+        - name: Añadir repo Appstream
+          ansible.builtin.yum_repository:
+            name: Centos8_Appstream
+            description: Centos8 Appstream
+            baseurl: http://mirror.centos.org/centos/8-stream/AppStream/x86_64/os/
+            gpgcheck: no
+
+        - name: Añadir repo BaseOS
+          ansible.builtin.yum_repository:
+            name: Centos8_BaseOS
+            description: Centos8 BaseOS
+            baseurl: http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/
+            gpgcheck: no
+
+        - name: Instalar crontab
+          ansible.builtin.package:
+            name: crontabs
+            state: present
+            update_cache: true
+
+        - name: Levantar servicio crond
+          ansible.builtin.service:
+            name: crond
+            state: started
+            enabled: true
+
+...
