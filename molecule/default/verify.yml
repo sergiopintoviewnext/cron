@@ -3,8 +3,19 @@
 
 - name: Verify
   hosts: all
-  gather_facts: false
+  gather_facts: true
+  vars_files:
+    - main.yml
   tasks:
-  - name: Example assertion
+  - name: Ver contenido de fichero de crontab
+    ansible.builtin.command:
+      cmd: "cat /var/spool/cron/{{ ansible_user_id }}"
+    register: contenido
+
+  
+  - name: Verificar contenido
     ansible.builtin.assert:
-      that: true
+      that: "'{{ item.job }}' in contenido.stdout"
+      success_msg: "La tarea '{{ item.name }}' que realiza '{{ item.job }}' existe en el fichero {{ contenido.cmd[1] }}"
+      fail_msg:
+    with_items: "{{ tarea_cron }}"

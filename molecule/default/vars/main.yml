@@ -1,0 +1,8 @@
+tarea_cron: 
+  - { name: prueba,
+      job: touch /tmp/fichero,         
+      minute: "*",
+      hour: "*",         
+      day: "*",
+      month: "*",
+      weekday: "*"}
