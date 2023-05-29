@@ -1,0 +1,6 @@
+- name: Send notification message via Slack
+  community.general.slack:
+    token: "{{ token }}"
+    channel: "{{ channel }}"
+    msg: "{{ msg }}"
+  delegate_to: localhost
