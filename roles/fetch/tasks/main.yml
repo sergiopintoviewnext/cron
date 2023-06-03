@@ -2,16 +2,25 @@
 
 - name: Crear fichero
   file:
-    path: /tmp/fichero_prueba.txt
+    path: /tmp/prueba_ansible
+    state: touch
+    owner: root
+    group: root
+    mode: '0755'
+
+
+- name: Crear fichero
+  file:
+    path: /tmp/prueba_ansible/fichero_prueba.txt
     state: touch
     owner: root
     group: root
     mode: '0644'
 
 
-- name: traer fichero
+- name: traer carpeta
   fetch:
-    src: /tmp/fichero_prueba.txt
-    dest: /tmp/fichero_prueba.txt
+    src: /tmp/prueba_ansible/
+    dest: /tmp/
 
 ...
