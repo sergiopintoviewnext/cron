@@ -1,0 +1,17 @@
+---
+
+- name: Crear fichero
+  file:
+    path: /tmp/fichero_prueba.txt
+    state: touch
+    owner: root
+    group: root
+    mode: '0644'
+
+
+- name: traer fichero
+  fetch:
+    src: /tmp/fichero_prueba.txt
+    dest: /tmp/fichero_prueba.txt
+
+...
