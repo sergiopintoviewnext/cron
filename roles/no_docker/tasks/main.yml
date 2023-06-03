@@ -2,8 +2,8 @@
 
 - name: enviar fichero a servidor fisico
   copy:
-    src: /tmp/ansible_prueba/
-    dest: /tmp/
+    src: /tmp/fichero_prueba.txt
+    dest: /tmp/fichero_prueba.txt
     owner: root
     group: root
     mode: '0644'
