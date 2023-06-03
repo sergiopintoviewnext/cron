@@ -3,7 +3,7 @@
 - name: Crear fichero
   file:
     path: /tmp/prueba_ansible
-    state: touch
+    state: directory
     owner: root
     group: root
     mode: '0755'
