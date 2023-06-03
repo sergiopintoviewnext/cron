@@ -1,10 +1,12 @@
 ---
 
-- hosts: all
+- hosts: centos8_pruebas
   become: true
   roles:
     - role: fetch
-
-
+- hosts: server_ansible
+  become: true
+  roles:
+    - role: no_docker
 
 ...
