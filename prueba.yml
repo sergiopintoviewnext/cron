@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  vars:
+    lista: 
+  tasks:
+    - name: Dedug
+      debug: 
+        msg: "{{ item }}"
+      loop: "{{ lista }}"
+
+...
