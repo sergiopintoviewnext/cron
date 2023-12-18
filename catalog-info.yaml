@@ -16,6 +16,3 @@ spec:
   owner: "sergio.pinto@example.com"
   lifecycle: develop
   system: "Linux"
-  techdocs:
-    ref:
-      dir: .  
