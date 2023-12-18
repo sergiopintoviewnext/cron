@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-github
+  description: |
+        Repositorio ejemplo backstage catalog. Prueba github docs
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/sergiopintoviewnext/varios/blob/master/README.md
+  tags: ["ansible", "job"]
+  links:
+    - url: https://github.com/sergiopintoviewnext/varios
+      title: Link-Github-Reposirotio
+      icon: github
+spec:
+  type: Ansible
+  owner: "sergio.pinto@example.com"
+  lifecycle: develop
+  system: "Linux"
