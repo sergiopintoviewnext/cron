@@ -1,11 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
-metadata:
-  namespace: ansible
+metadata:  
   name: test-github
   description: |
         Repositorio ejemplo backstage catalog. Prueba github docs
-  tags: ["ansible", "job"]
+  tags: ["test", "job"]
   links:
     - url: https://github.com/sergiopintoviewnext/varios
       title: Link-Github-Reposirotio
@@ -13,6 +12,6 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:./docs/index.md
 spec:
-  type: Ansible
-  owner: user:"sergio.pinto@example.com"
-  lifecycle: develop
+  type: test
+  owner: VIEWNEXT_TORRE_DE_CONTROL
+  lifecycle: release
