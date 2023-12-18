@@ -5,7 +5,7 @@ metadata:
   description: |
         Repositorio ejemplo backstage catalog. Prueba github docs
   annotations:
-    backstage.io/techdocs-ref: url:https://github.com/sergiopintoviewnext/varios/blob/master/README.md
+    backstage.io/techdocs-ref: url:https://github.com/sergiopintoviewnext/varios/blob/master/docs/index.md
   tags: ["ansible", "job"]
   links:
     - url: https://github.com/sergiopintoviewnext/varios
