@@ -1,0 +1,7 @@
+site_name: ' test-github'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
