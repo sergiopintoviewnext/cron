@@ -9,6 +9,8 @@ metadata:
     - url: https://github.com/sergiopintoviewnext/varios
       title: Link-Github-Reposirotio
       icon: github
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/sergiopintoviewnext/varios/blob/master/README.md      
 spec:
   type: Ansible
   owner: "sergio.pinto@example.com"
