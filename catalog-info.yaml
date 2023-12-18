@@ -1,6 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  namespace: ansible
   name: test-github
   description: |
         Repositorio ejemplo backstage catalog. Prueba github docs
