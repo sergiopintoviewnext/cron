@@ -4,9 +4,9 @@ metadata:
   name: test-github
   description: |
         Repositorio ejemplo backstage catalog. Prueba github docs
-  annotations:
+  #annotations:
     #backstage.io/techdocs-ref: url:https://github.com/sergiopintoviewnext/varios/tree/master
-    backstage.io/techdocs-ref: dir: .
+   # backstage.io/techdocs-ref: dir: .
   tags: ["ansible", "job"]
   links:
     - url: https://github.com/sergiopintoviewnext/varios
@@ -17,3 +17,6 @@ spec:
   owner: "sergio.pinto@example.com"
   lifecycle: develop
   system: "Linux"
+  techdocs:
+    ref:
+      dir: .  
