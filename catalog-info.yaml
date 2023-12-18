@@ -14,6 +14,5 @@ metadata:
     backstage.io/techdocs-ref: dir:./docs/index.md
 spec:
   type: Ansible
-  owner: "sergio.pinto@example.com"
+  owner: user:"sergio.pinto@example.com"
   lifecycle: develop
-  system: "Linux"
