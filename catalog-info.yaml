@@ -4,7 +4,7 @@ metadata:
   name: test-github
   description: |
         Repositorio ejemplo backstage catalog. Prueba github docs
-  tags: ["test", "job", "release", "prueba"]
+  tags: ["test", "job", "release", "prueba", "test2"]
   links:
     - url: https://github.com/sergiopintoviewnext/varios
       title: Link-Github-Reposirotio
