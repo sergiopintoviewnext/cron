@@ -13,5 +13,6 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: test
+  system: test-local
   owner: VIEWNEXT_TORRE_DE_CONTROL
   lifecycle: release
