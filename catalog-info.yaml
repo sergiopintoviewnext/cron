@@ -7,7 +7,7 @@ metadata:
   tags: ["test", "job", "release", "prueba", "test2"]
   links:
     - url: https://github.com/sergiopintoviewnext/varios
-      title: Link-Github-Reposirotio
+      title: "Link Github Reposirotio"
       icon: github
   annotations:
     backstage.io/techdocs-ref: dir:.
