@@ -5,5 +5,5 @@ nav:
 plugins:
   - techdocs-core
 theme:
-  name: readthedocs
+  name: mkdocs
   
