@@ -1,6 +1,5 @@
 site_name: 'varios - prueba backstage'
 site_description: "Documentacion prueba para backstage"
-site_url: "https://github.com/sergiopintoviewnext/varios/blob/master/README.md"
 nav:
   - README: index.md
 plugins:
