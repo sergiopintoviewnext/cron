@@ -1,25 +1,18 @@
-# apiVersion: backstage.io/v1alpha1
-# kind: Component
-# metadata:  
-#   name: test-github
-#   description: |
-#         Repositorio ejemplo backstage catalog. Prueba github docs
-#   tags: ["test", "job", "release", "prueba"]
-#   links:
-#     - url: https://github.com/sergiopintoviewnext/varios
-#       title: Link-Github-Reposirotio
-#       icon: github
-#   annotations:
-#     backstage.io/techdocs-ref: dir:.
-# spec:
-#   type: test
-#   system: test-local
-#   owner: VIEWNEXT_TORRE_DE_CONTROL
-#   lifecycle: release
 apiVersion: backstage.io/v1alpha1
-kind: System
-metadata:
-  name: test-local
-  description: system test
+kind: Component
+metadata:  
+  name: test-github
+  description: |
+        Repositorio ejemplo backstage catalog. Prueba github docs
+  tags: ["test", "job", "release", "prueba"]
+  links:
+    - url: https://github.com/sergiopintoviewnext/varios
+      title: Link-Github-Reposirotio
+      icon: github
+  annotations:
+    backstage.io/techdocs-ref: dir:.
 spec:
-  owner: viewnext_torre_de_control
+  type: test
+  system: test-local
+  owner: VIEWNEXT_TORRE_DE_CONTROL
+  lifecycle: release
