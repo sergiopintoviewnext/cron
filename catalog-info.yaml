@@ -15,4 +15,4 @@ spec:
   type: test
   system: test-local
   owner: VIEWNEXT_TORRE_DE_CONTROL
-  lifecycle: release
+  lifecycle: develop
