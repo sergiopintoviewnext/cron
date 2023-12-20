@@ -1,7 +1,9 @@
-site_name: ' test-github'
-
+site_name: 'varios - prueba backstage'
+site_description: "Documentacion prueba para backstage"
 nav:
-  - Home: index.md
-
+  - README: index.md
 plugins:
   - techdocs-core
+theme:
+  name: readthedocs
+  
