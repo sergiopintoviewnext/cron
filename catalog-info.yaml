@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:  
-  name: test-github
+  name: test_github
   description: |
         Repositorio ejemplo backstage catalog. Prueba github docs
   tags: ["test", "job", "release", "prueba", "test2"]
