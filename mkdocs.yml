@@ -1,7 +1,8 @@
 site_name: 'varios - prueba backstage'
 site_description: "Documentacion prueba para backstage"
 nav:
-  - README: index.md
+  - README: README.md
+  - documentacion: documentacion.md
 plugins:
   - techdocs-core
 
