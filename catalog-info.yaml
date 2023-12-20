@@ -16,3 +16,16 @@ spec:
   system: test-local
   owner: VIEWNEXT_TORRE_DE_CONTROL
   lifecycle: release
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: viewnext_torre_de_control
+  description: grupo de prueba
+spec:
+  type: test-type
+  profile:
+    displayName: viewnext_torre_de_control
+    email: infrastructure@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  children: [backstage, other]
