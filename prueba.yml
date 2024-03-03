@@ -4,9 +4,13 @@
   vars:
     lista: 
   tasks:
-    - name: Dedug
+    - name: Dedug var
       debug: 
-        msg: "{{ item }}"
-      loop: "{{ lista }}"
+        msg: "{{ lista }}"
+      #loop: "{{ lista }}"
+
+    - name: Dedug var
+      debug: 
+        msg: "{{ lista | b64decode }}"
 
 ...
